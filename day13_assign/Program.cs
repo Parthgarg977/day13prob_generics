@@ -12,7 +12,8 @@ namespace Generics
             {
                 Console.Write("Select Option:\n" +
                     "1) Press 1 to find integer maximum number\n"+
-                    "2) Press 2 to find float maximum number\n");
+                    "2) Press 2 to find float maximum number\n" +
+                    "3) Press 3 to find maximum string\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 
                 switch (option)
@@ -35,6 +36,16 @@ namespace Generics
                         float resultf = obj1.FindMxInteger(numf1, numf2, numf3);
                         Console.WriteLine("-----------------------------------");
                         Console.WriteLine("Maximum Number is:" + resultf);// To display Maximum Number
+                        Console.WriteLine("-----------------------------------");
+                        break;
+                    case 3:
+                        Console.WriteLine("Enter 3 strings");
+                        string nums1 = Console.ReadLine();
+                        string nums2 = Console.ReadLine();
+                        string nums3 = Console.ReadLine();
+                        string results = obj1.FindMxInteger(nums1, nums2, nums3);
+                        Console.WriteLine("-----------------------------------");
+                        Console.WriteLine("Maximum Number is:" + results);// To display Maximum Number
                         Console.WriteLine("-----------------------------------");
                         break;
                     default:
